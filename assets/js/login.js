@@ -60,8 +60,8 @@ $('#form_login').submit(function (e) {
         return layer.msg('登录失败！')
       }
 
-      // 登录成功,将 token 字符串存储到 localStorage 中
       layer.msg('登录成功！')
+      // 登录成功,将 token 字符串存储到 localStorage 中
       localStorage.setItem('token', res.token)
       // 跳转后台首页
       location.href = '/18-bignews/index.html'
